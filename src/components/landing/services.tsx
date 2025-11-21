@@ -54,8 +54,8 @@ export function Services() {
                   ))}
                 </ul>
                 <div className="flex justify-between items-center text-sm text-muted-foreground mb-6">
-                    <span>{service.time}</span>
-                    <span className="font-semibold text-foreground">{service.rate}</span>
+                    <span className="font-code">{service.time}</span>
+                    <span className="font-semibold text-foreground font-code">{service.rate}</span>
                 </div>
                 <Button asChild className="w-full">
                   <Link href="#booking">Book Now</Link>
