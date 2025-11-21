@@ -59,6 +59,24 @@
       "description": "An abstract photo playing with light and color.",
       "imageUrl": "https://images.unsplash.com/photo-1519750783826-e2420f4d687f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw3fHxhYnN0cmFjdCUyMGxpZ2h0fGVufDB8fHx8MTc2MzYzMjIwNXww&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "abstract light"
+    },
+    {
+      "id": "scene1",
+      "description": "A portrait with soft backlighting during golden hour.",
+      "imageUrl": "https://images.unsplash.com/photo-1714090547790-1c94babab0a9?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxwb3J0cmFpdCUyMGdvbGRlbnxlbnwwfHx8fDE3NjM3MTIzNTZ8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "portrait golden"
+    },
+    {
+      "id": "scene2",
+      "description": "A dramatic black and white street scene with long shadows.",
+      "imageUrl": "https://images.unsplash.com/photo-1666712589053-29f1b1d11f67?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw2fHxzdHJlZXQlMjBzaGFkb3d8ZW58MHx8fHwxNzYzNzEyMzU2fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "street shadow"
+    },
+    {
+      "id": "scene3",
+      "description": "A clean, modern architectural shot under an overcast sky.",
+      "imageUrl": "https://images.unsplash.com/photo-1676085271283-841691e906a6?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw3fHxhcmNoaXRlY3R1cmUlMjBvdmVyY2FzdHxlbnwwfHx8fDE3NjM3MTIzNTZ8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "architecture overcast"
     }
   ]
 }
