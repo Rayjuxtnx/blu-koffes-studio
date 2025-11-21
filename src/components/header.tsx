@@ -10,9 +10,8 @@ import { cn } from '@/lib/utils';
 const navLinks = [
   { href: '#showcase', label: 'Showcase' },
   { href: '#services', label: 'Experiences' },
-  { href: '#booking', label: 'Booking' },
   { href: '#about', label: 'About' },
-  { href: '#contact', label: 'Contact' },
+  { href: '#contact', label: 'Inquire' },
 ];
 
 export function Header() {
