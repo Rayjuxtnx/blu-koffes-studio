@@ -6,6 +6,7 @@ import { About } from '@/components/landing/about';
 import { SocialFeed } from '@/components/landing/social-feed';
 import { Footer } from '@/components/footer';
 import { AutoScrollGallery } from '@/components/landing/auto-scroll-gallery';
+import { LensSimulation } from '@/components/landing/lens-simulation';
 
 export default function Home() {
   return (
@@ -15,6 +16,7 @@ export default function Home() {
         <Hero />
         <AutoScrollGallery />
         <Showcase />
+        <LensSimulation />
         <Services />
         <About />
         <SocialFeed />
