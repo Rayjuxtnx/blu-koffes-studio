@@ -6,17 +6,28 @@ import { Camera, Menu } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { Sheet, SheetContent, SheetTrigger } from '@/components/ui/sheet';
 import { cn } from '@/lib/utils';
+import { usePathname } from 'next/navigation';
 
 const navLinks = [
+  { href: '/#showcase', label: 'Showcase' },
+  { href: '/#services', label: 'Experiences' },
+  { href: '/#about', label: 'About' },
+  { href: '/contact', label: 'Inquire' },
+];
+
+const homeNavLinks = [
   { href: '#showcase', label: 'Showcase' },
   { href: '#services', label: 'Experiences' },
   { href: '#about', label: 'About' },
-  { href: '#contact', label: 'Inquire' },
+  { href: '/contact', label: 'Inquire' },
 ];
 
 export function Header() {
   const [isScrolled, setIsScrolled] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+  const pathname = usePathname();
+
+  const links = pathname === '/' ? homeNavLinks : navLinks;
 
   useEffect(() => {
     const handleScroll = () => {
@@ -43,7 +54,7 @@ export function Header() {
           <span>Visionary Vault</span>
         </Link>
         <nav className="hidden md:flex items-center gap-6">
-          {navLinks.map((link) => (
+          {links.map((link) => (
             <Link
               key={link.href}
               href={link.href}
@@ -70,7 +81,7 @@ export function Header() {
                     </Link>
                 </div>
                 <nav className="flex flex-col gap-6">
-                  {navLinks.map((link) => (
+                  {links.map((link) => (
                     <Link
                       key={link.href}
                       href={link.href}

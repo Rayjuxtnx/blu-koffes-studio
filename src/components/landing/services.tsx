@@ -48,7 +48,7 @@ export function Services() {
                   ))}
                 </ul>
                 <Button asChild className="w-full mt-auto">
-                  <Link href="#contact">
+                  <Link href="/contact">
                     <Sparkles className="mr-2 h-4 w-4 transition-transform group-hover:scale-125" />
                     Start Inquiry
                   </Link>

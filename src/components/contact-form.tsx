@@ -36,7 +36,7 @@ function SubmitButton() {
     );
 }
 
-export function Contact() {
+export function ContactForm() {
   const initialState = { message: null, errors: {}, data: null };
   const [state, dispatch] = useFormState(createInquiry, initialState);
 

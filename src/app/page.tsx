@@ -4,7 +4,6 @@ import { Showcase } from '@/components/landing/showcase';
 import { Services } from '@/components/landing/services';
 import { About } from '@/components/landing/about';
 import { SocialFeed } from '@/components/landing/social-feed';
-import { Contact } from '@/components/landing/contact';
 import { Footer } from '@/components/footer';
 
 export default function Home() {
@@ -17,7 +16,6 @@ export default function Home() {
         <Services />
         <About />
         <SocialFeed />
-        <Contact />
       </main>
       <Footer />
     </div>
