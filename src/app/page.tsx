@@ -5,6 +5,7 @@ import { Services } from '@/components/landing/services';
 import { About } from '@/components/landing/about';
 import { SocialFeed } from '@/components/landing/social-feed';
 import { Footer } from '@/components/footer';
+import { AutoScrollGallery } from '@/components/landing/auto-scroll-gallery';
 
 export default function Home() {
   return (
@@ -12,6 +13,7 @@ export default function Home() {
       <Header />
       <main className="flex-grow">
         <Hero />
+        <AutoScrollGallery />
         <Showcase />
         <Services />
         <About />
