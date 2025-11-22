@@ -48,10 +48,10 @@ export function Services() {
         </div>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {services.map((service) => (
-            <Card key={service.name} className="flex flex-col border-secondary/20 hover:border-primary/50 transition-colors duration-300 shadow-lg bg-background group text-center">
+            <Card key={service.name} className="flex flex-col bg-background border-secondary/20 transition-all duration-300 hover:shadow-primary/20 hover:shadow-2xl hover:-translate-y-2 group text-center">
               <CardHeader className="items-center">
-                <div className="p-4 bg-primary/10 rounded-full mb-4 group-hover:scale-110 transition-transform">
-                    <service.icon className="h-8 w-8 text-primary" />
+                <div className="p-4 bg-primary/10 rounded-full mb-4 ring-4 ring-primary/20 group-hover:scale-110 transition-transform duration-300">
+                    <service.icon className="h-10 w-10 text-primary" />
                 </div>
                 <CardTitle className="text-2xl font-headline">{service.name}</CardTitle>
               </CardHeader>
@@ -59,7 +59,7 @@ export function Services() {
                 <p className="text-muted-foreground mb-6 flex-grow">{service.description}</p>
                 <Button asChild className="w-full mt-auto">
                   <Link href="/contact">
-                    <Sparkles className="mr-2 h-4 w-4 transition-transform group-hover:scale-125" />
+                    <Sparkles className="mr-2 h-4 w-4 transition-transform group-hover:animate-ping" />
                     Start Inquiry
                   </Link>
                 </Button>
