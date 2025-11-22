@@ -6,9 +6,9 @@ import { Camera, Menu } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { Sheet, SheetContent, SheetTrigger } from '@/components/ui/sheet';
 import { cn } from '@/lib/utils';
-import { usePathname } from 'next/navigation';
 import { siteConfig } from '@/lib/site-config';
 import Image from 'next/image';
+import { usePathname } from 'next/navigation';
 
 const navLinks = [
   { href: '/', label: 'Home' },
@@ -19,20 +19,20 @@ const navLinks = [
   { href: '/faq', label: 'FAQ' },
 ];
 
-const homeNavLinks = [
-  { href: '/gallery', label: 'Gallery' },
-  { href: '#services', label: 'Experiences' },
-  { href: '#about', label: 'About' },
-  { href: '/contact', label: 'Inquire' },
-  { href: '/faq', label: 'FAQ' },
-];
-
 export function Header() {
   const [isScrolled, setIsScrolled] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const pathname = usePathname();
 
-  const links = pathname === '/' ? homeNavLinks : navLinks;
+  const links = pathname === '/' ? navLinks.filter(l => l.href.startsWith('/') && l.href.length > 1 ? l.href !== '/' : true) : navLinks;
+  
+  // For homepage anchor links, we need to adjust them if we are not on the homepage
+  const getHref = (href: string) => {
+    if (pathname !== '/' && href.startsWith('/#')) {
+      return `/${href}`;
+    }
+    return href;
+  }
 
   useEffect(() => {
     const handleScroll = () => {
@@ -69,10 +69,10 @@ export function Header() {
           <Logo />
         </Link>
         <nav className="hidden md:flex items-center gap-6">
-          {links.map((link) => (
+          {navLinks.map((link) => (
             <Link
               key={link.href}
-              href={link.href}
+              href={getHref(link.href)}
               className="text-sm font-medium text-muted-foreground transition-colors hover:text-foreground"
             >
               {link.label}
@@ -95,10 +95,10 @@ export function Header() {
                     </Link>
                 </div>
                 <nav className="flex flex-col gap-6">
-                  {links.map((link) => (
+                  {navLinks.map((link) => (
                     <Link
                       key={link.href}
-                      href={link.href}
+                      href={getHref(link.href)}
                       onClick={handleLinkClick}
                       className="text-lg font-medium text-foreground transition-colors hover:text-primary"
                     >

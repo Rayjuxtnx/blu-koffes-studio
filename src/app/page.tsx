@@ -8,14 +8,13 @@ import { Footer } from '@/components/footer';
 import { AutoScrollGallery } from '@/components/landing/auto-scroll-gallery';
 import { LensSimulation } from '@/components/landing/lens-simulation';
 import { SceneAnalyzer } from '@/components/landing/scene-analyzer';
-import { AiLensPortal } from '@/components/landing/ai-lens-portal';
 
 export default function Home() {
   return (
     <div className="flex flex-col min-h-screen">
       <Header />
       <main className="flex-grow">
-        <AiLensPortal />
+        <Hero />
         <Services />
         <AutoScrollGallery />
         <Showcase />
