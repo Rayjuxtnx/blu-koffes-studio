@@ -106,11 +106,11 @@ export function ContactForm() {
                 <div>
                     <h3 className="text-2xl font-semibold font-headline mb-4">Direct Contact</h3>
                     <div className="space-y-3">
-                        <div className="flex items-center gap-3"><Mail className="h-5 w-5 text-primary" /><a href="mailto:contact@visionaryvault.com" className="text-muted-foreground hover:text-foreground">contact@visionaryvault.com</a></div>
+                        <div className="flex items-center gap-3"><Mail className="h-5 w-5 text-primary" /><a href="mailto:contact@blukoffeestudioconsultancy.com" className="text-muted-foreground hover:text-foreground">contact@blukoffeestudioconsultancy.com</a></div>
                         <div className="flex items-center gap-3"><Phone className="h-5 w-5 text-primary" /><span className="text-muted-foreground">(555) 123-4567</span></div>
                         <div className="flex items-center gap-3"><MapPin className="h-5 w-5 text-primary" /><span className="text-muted-foreground">New York, NY</span></div>
-                        <div className="flex items-center gap-3 pt-2"><Instagram className="h-5 w-5 text-primary" /><a href="#" className="text-muted-foreground hover:text-foreground">@visionaryvault</a></div>
-                        <div className="flex items-center gap-3"><Twitter className="h-5 w-5 text-primary" /><a href="#" className="text-muted-foreground hover:text-foreground">@visionaryvault</a></div>
+                        <div className="flex items-center gap-3 pt-2"><Instagram className="h-5 w-5 text-primary" /><a href="#" className="text-muted-foreground hover:text-foreground">@blukoffeestudio</a></div>
+                        <div className="flex items-center gap-3"><Twitter className="h-5 w-5 text-primary" /><a href="#" className="text-muted-foreground hover:text-foreground">@blukoffeestudio</a></div>
                     </div>
                 </div>
                 <div>

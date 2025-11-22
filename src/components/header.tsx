@@ -52,7 +52,7 @@ export function Header() {
       <div className="container mx-auto flex h-20 items-center justify-between px-4 md:px-6">
         <Link href="/" className="flex items-center gap-2 font-bold text-xl font-headline">
           <Camera className="h-6 w-6 text-primary" />
-          <span>Visionary Vault</span>
+          <span>Blu Koffee Studio Consultancy</span>
         </Link>
         <nav className="hidden md:flex items-center gap-6">
           {links.map((link) => (
@@ -78,7 +78,7 @@ export function Header() {
                 <div className="flex items-center justify-between mb-8">
                     <Link href="/" className="flex items-center gap-2 font-bold text-lg" onClick={handleLinkClick}>
                         <Camera className="h-6 w-6 text-primary" />
-                        <span>Visionary Vault</span>
+                        <span>Blu Koffee Studio Consultancy</span>
                     </Link>
                 </div>
                 <nav className="flex flex-col gap-6">

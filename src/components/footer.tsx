@@ -9,7 +9,7 @@ export function Footer() {
           <div className="flex flex-col items-start">
             <Link href="/" className="flex items-center gap-2 font-bold text-xl font-headline mb-4">
               <Camera className="h-6 w-6 text-primary" />
-              <span>Visionary Vault</span>
+              <span>Blu Koffee Studio Consultancy</span>
             </Link>
             <p className="text-muted-foreground text-sm">Visual stories crafted with precision.</p>
           </div>
@@ -32,7 +32,7 @@ export function Footer() {
           </div>
         </div>
         <div className="border-t border-border mt-8 pt-6 text-center text-sm text-muted-foreground">
-          <p>&copy; {new Date().getFullYear()} Visionary Vault. All rights reserved.</p>
+          <p>&copy; {new Date().getFullYear()} Blu Koffee Studio Consultancy. All rights reserved.</p>
         </div>
       </div>
     </footer>
