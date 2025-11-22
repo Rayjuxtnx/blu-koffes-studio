@@ -76,24 +76,24 @@ export function ContactForm() {
                     <form action={dispatch} className="space-y-4">
                         <div>
                             <Label htmlFor="projectDescription" className="sr-only">Project Description</Label>
-                            <Textarea id="projectDescription" name="projectDescription" placeholder="Tell us about your project..." rows={4} />
+                            <Textarea id="projectDescription" name="projectDescription" placeholder="Tell us about your project..." rows={4} required />
                             {state.errors?.projectDescription && <p className="text-destructive text-sm mt-1">{state.errors.projectDescription}</p>}
                         </div>
                         <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                             <div>
                                 <Label htmlFor="desiredTimeline" className="sr-only">Desired Timeline</Label>
-                                <Input id="desiredTimeline" name="desiredTimeline" placeholder="e.g., 2-3 weeks" />
+                                <Input id="desiredTimeline" name="desiredTimeline" placeholder="e.g., 2-3 weeks" required />
                                 {state.errors?.desiredTimeline && <p className="text-destructive text-sm mt-1">{state.errors.desiredTimeline}</p>}
                             </div>
                             <div>
                                 <Label htmlFor="budget" className="sr-only">Estimated Budget</Label>
-                                <Input id="budget" name="budget" placeholder="e.g., $1000 - $1500" />
+                                <Input id="budget" name="budget" placeholder="e.g., Ksh 50,000" required />
                                 {state.errors?.budget && <p className="text-destructive text-sm mt-1">{state.errors.budget}</p>}
                             </div>
                         </div>
                         <div>
                             <Label htmlFor="contactInfo" className="sr-only">Your Email</Label>
-                            <Input id="contactInfo" name="contactInfo" type="email" placeholder="you@example.com" />
+                            <Input id="contactInfo" name="contactInfo" type="email" placeholder="you@example.com" required />
                             {state.errors?.contactInfo && <p className="text-destructive text-sm mt-1">{state.errors.contactInfo}</p>}
                         </div>
                         <SubmitButton />

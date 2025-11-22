@@ -14,10 +14,10 @@ export interface InquiryState {
 }
 
 const InquirySchema = z.object({
-    projectDescription: z.string().min(10, 'Please provide a more detailed description (at least 10 characters).'),
-    desiredTimeline: z.string().min(3, 'Please specify your desired timeline.'),
-    budget: z.string().min(2, 'Please provide an estimated budget.'),
-    contactInfo: z.string().email('Please provide a valid email address.'),
+    projectDescription: z.string().min(1, 'Project description is required.'),
+    desiredTimeline: z.string().min(1, 'Desired timeline is required.'),
+    budget: z.string().min(1, 'Estimated budget is required.'),
+    contactInfo: z.string().email('A valid email address is required.'),
 });
 
 export async function createInquiry(prevState: InquiryState, formData: FormData): Promise<InquiryState> {
