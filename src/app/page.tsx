@@ -16,11 +16,11 @@ export default function Home() {
       <Header />
       <main className="flex-grow">
         <AiLensPortal />
+        <Services />
         <AutoScrollGallery />
         <Showcase />
         <LensSimulation />
         <SceneAnalyzer />
-        <Services />
         <About />
         <SocialFeed />
       </main>
