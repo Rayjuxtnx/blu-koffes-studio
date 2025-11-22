@@ -8,23 +8,7 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/com
 import { Input } from '@/components/ui/input';
 import { Label } from '@/components/ui/label';
 import { Textarea } from '@/components/ui/textarea';
-import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from '@/components/ui/accordion';
 import { Instagram, Loader2, Mail, MapPin, Phone, Send, Twitter } from 'lucide-react';
-
-const faqs = [
-  {
-    question: "What is your photography style?",
-    answer: "My style is a blend of cinematic storytelling and authentic photojournalism. I focus on capturing genuine emotions and moments, using light and composition to create a timeless, artistic feel."
-  },
-  {
-    question: "How long does it take to receive our photos?",
-    answer: "For standard portrait sessions, the turnaround time is typically 2-3 weeks. For weddings and larger events, it's usually 6-8 weeks. You'll receive a private online gallery with your high-resolution, edited images."
-  },
-  {
-    question: "Do you travel for shoots?",
-    answer: "Absolutely! I love traveling for projects. Travel fees are assessed on a case-by-case basis, depending on the location and duration. Let's discuss your vision!"
-  },
-];
 
 function SubmitButton() {
     const { pending } = useFormStatus();
@@ -112,17 +96,6 @@ export function ContactForm() {
                         <div className="flex items-center gap-3 pt-2"><Instagram className="h-5 w-5 text-primary" /><a href="#" className="text-muted-foreground hover:text-foreground">@blukoffeestudio</a></div>
                         <div className="flex items-center gap-3"><Twitter className="h-5 w-5 text-primary" /><a href="#" className="text-muted-foreground hover:text-foreground">@blukoffeestudio</a></div>
                     </div>
-                </div>
-                <div>
-                    <h3 className="text-2xl font-semibold font-headline mb-4">FAQ</h3>
-                    <Accordion type="single" collapsible className="w-full">
-                        {faqs.map(faq => (
-                            <AccordionItem value={faq.question} key={faq.question}>
-                                <AccordionTrigger>{faq.question}</AccordionTrigger>
-                                <AccordionContent>{faq.answer}</AccordionContent>
-                            </AccordionItem>
-                        ))}
-                    </Accordion>
                 </div>
             </div>
         </div>

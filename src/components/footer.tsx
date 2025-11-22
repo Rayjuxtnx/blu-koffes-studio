@@ -32,6 +32,7 @@ export function Footer() {
               <li><Link href="/#services" className="text-sm text-muted-foreground hover:text-foreground">Experiences</Link></li>
               <li><Link href="/#about" className="text-sm text-muted-foreground hover:text-foreground">About</Link></li>
               <li><Link href="/contact" className="text-sm text-muted-foreground hover:text-foreground">Contact</Link></li>
+              <li><Link href="/faq" className="text-sm text-muted-foreground hover:text-foreground">FAQ</Link></li>
             </ul>
           </div>
           <div className="md:justify-self-end">
