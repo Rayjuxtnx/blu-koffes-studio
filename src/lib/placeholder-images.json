@@ -2,79 +2,79 @@
   "placeholderImages": [
     {
       "id": "hero",
-      "description": "A close-up of a camera lens, reflecting light.",
+      "description": "Main hero banner for the homepage.",
       "imageUrl": "https://images.unsplash.com/photo-1646670244979-305554fbdd6f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxM3x8YSUyMHBob3RvJTIwb2YlMjBjYW1lcmElMjBsZW5zZXxlbnwwfHx8fDE3NjM4Mjk0OTB8MA&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "camera lens"
     },
     {
       "id": "showcase1",
-      "description": "A powerful black and white portrait capturing a raw human emotion.",
+      "description": "Image for the 'The Human Moment' showcase section on the homepage and for the main gallery. Also used in the Lens Simulation.",
       "imageUrl": "https://images.unsplash.com/photo-1700810601896-8f0efb4ac3c7?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxMHx8cG9ydHJhaXQlMjBlbW90aW9ufGVufDB8fHx8MTc2MzcxMTM2OHww&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "portrait emotion"
     },
     {
       "id": "showcase2",
-      "description": "Dynamic street photography showing the blur of city life at night.",
+      "description": "Image for the 'City Breathes' showcase section on the homepage and for the main gallery.",
       "imageUrl": "https://images.unsplash.com/photo-1506606401543-2e73709cebb4?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw1fHxjaXR5JTIwbmlnaHR8ZW58MHx8fHwxNzYzNzA3ODkzfDA&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "city night"
     },
     {
       "id": "showcase3",
-      "description": "An architectural detail shot focusing on lines and shadows.",
+      "description": "Image for the 'Design in Focus' showcase section on the homepage and for the main gallery.",
       "imageUrl": "https://images.unsplash.com/photo-1715981036434-8e2e4b38a485?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwzfHxhcmNoaXRlY3R1cmUlMjBzaGFkb3d8ZW58MHx8fHwxNzYzNzExMzY5fDA&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "architecture shadow"
     },
     {
       "id": "artist_portrait",
-      "description": "A striking, creative self-portrait of the photographer.",
+      "description": "The main portrait of the artist on the 'About' page.",
       "imageUrl": "https://images.unsplash.com/photo-1712687947291-8e89f1f426ab?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw3fHxhcnRpc3QlMjBwb3J0cmFpdHxlbnwwfHx8fDE3NjM2NDAzMzZ8MA&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "artist portrait"
     },
     {
       "id": "social1",
-      "description": "Behind the scenes shot of a photography setup.",
+      "description": "Social feed and gallery image: Behind the scenes of a photo setup.",
       "imageUrl": "https://images.unsplash.com/photo-1745848038152-cccaa51755c0?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw0fHxwaG90b2dyYXBoeSUyMHNldHVwfGVufDB8fHx8MTc2MzcxMTM2OHww&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "photography setup"
     },
     {
       "id": "social2",
-      "description": "A candid moment from a recent event shoot.",
+      "description": "Social feed and gallery image: A candid moment from an event.",
       "imageUrl": "https://images.unsplash.com/photo-1748260526938-4fa5472eb796?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw5fHxjYW5kaWQlMjBldmVudHxlbnwwfHx8fDE3NjM3MTEzNjl8MA&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "candid event"
     },
     {
       "id": "social3",
-      "description": "A close-up of a vintage camera.",
+      "description": "Social feed and gallery image: A close-up of a vintage camera.",
       "imageUrl": "https://images.unsplash.com/photo-1516961642265-531546e84af2?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw0fHx2aW50YWdlJTIwY2FtZXJhfGVufDB8fHx8MTc2MzYzMTY1Nnww&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "vintage camera"
     },
     {
       "id": "social4",
-      "description": "A travel photo from a recent trip.",
+      "description": "Social feed and gallery image: A travel landscape photo.",
       "imageUrl": "https://images.unsplash.com/photo-1672774018781-2b6c40a1223f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxMHx8dHJhdmVsJTIwbGFuZHNjYXBlfGVufDB8fHx8MTc2MzYwNzk3MXww&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "travel landscape"
     },
     {
       "id": "social5",
-      "description": "An abstract photo playing with light and color.",
+      "description": "Social feed and gallery image: An abstract photo playing with light and color.",
       "imageUrl": "https://images.unsplash.com/photo-1519750783826-e2420f4d687f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw3fHxhYnN0cmFjdCUyMGxpZ2h0fGVufDB8fHx8MTc2MzYzMjIwNXww&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "abstract light"
     },
     {
       "id": "scene1",
-      "description": "A portrait with soft backlighting during golden hour.",
+      "description": "Sample image for Scene Analyzer: A portrait with soft, golden hour backlighting.",
       "imageUrl": "https://images.unsplash.com/photo-1714090547790-1c94babab0a9?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxwb3J0cmFpdCUyMGdvbGRlbnxlbnwwfHx8fDE3NjM3MTIzNTZ8MA&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "portrait golden"
     },
     {
       "id": "scene2",
-      "description": "A dramatic black and white street scene with long shadows.",
+      "description": "Sample image for Scene Analyzer: A dramatic black and white street scene with long shadows.",
       "imageUrl": "https://images.unsplash.com/photo-1666712589053-29f1b1d11f67?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw2fHxzdHJlZXQlMjBzaGFkb3d8ZW58MHx8fHwxNzYzNzEyMzU2fDA&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "street shadow"
     },
     {
       "id": "scene3",
-      "description": "A clean, modern architectural shot under an overcast sky.",
+      "description": "Sample image for Scene Analyzer: A clean, modern architectural shot under an overcast sky.",
       "imageUrl": "https://images.unsplash.com/photo-1676085271283-841691e906a6?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw3fHxhcmNoaXRlY3R1cmUlMjBvdmVyY2FzdHxlbnwwfHx8fDE3NjM3MTIzNTZ8MA&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "architecture overcast"
     }
