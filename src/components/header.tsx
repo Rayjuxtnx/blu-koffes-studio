@@ -23,8 +23,6 @@ export function Header() {
   const [isScrolled, setIsScrolled] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const pathname = usePathname();
-
-  const links = pathname === '/' ? navLinks.filter(l => l.href.startsWith('/') && l.href.length > 1 ? l.href !== '/' : true) : navLinks;
   
   // For homepage anchor links, we need to adjust them if we are not on the homepage
   const getHref = (href: string) => {
