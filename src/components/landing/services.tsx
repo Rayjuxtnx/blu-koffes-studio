@@ -1,23 +1,38 @@
 import Link from 'next/link';
 import { Card, CardContent, CardHeader, CardTitle, CardDescription } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
-import { Check, Sparkles } from 'lucide-react';
+import { Check, Sparkles, Camera, Heart, Cake, Users, Gift, GraduationCap } from 'lucide-react';
 
 const services = [
   {
-    name: 'Portrait Experience',
-    description: 'For individuals and couples who want to capture their essence.',
-    features: ['1-2 hour session', 'Online gallery of 30+ edited images', 'Choice of location'],
+    name: 'Studio Portrait',
+    description: 'Classic and timeless portraits captured in a professional studio setting.',
+    icon: Camera,
   },
   {
-    name: 'Event Storytelling',
-    description: 'Documenting your special events with a narrative-driven approach.',
-    features: ['Candid & posed shots', 'Full event coverage', 'Highlights video option'],
+    name: 'Wedding / Proposals',
+    description: 'Capturing the magic of your most important day with elegance and emotion.',
+    icon: Heart,
   },
   {
-    name: 'Brand Vision Session',
-    description: 'Creating a visual identity for your brand through compelling imagery.',
-    features: ['Strategy consultation', 'Product & lifestyle shots', 'Commercial usage rights'],
+    name: 'Birthdays',
+    description: 'Fun and vibrant photos to celebrate another year of life and create lasting memories.',
+    icon: Cake,
+  },
+  {
+    name: 'Family Photos',
+    description: 'Beautifully composed group photos that your family will cherish for generations.',
+    icon: Users,
+  },
+  {
+    name: 'Baby Bump',
+    description: 'Tender and artistic maternity shoots to celebrate the beauty of pregnancy.',
+    icon: Gift,
+  },
+  {
+    name: 'Graduations',
+    description: 'Commemorate your academic achievements with proud and professional portraits.',
+    icon: GraduationCap,
   },
 ];
 
@@ -26,27 +41,22 @@ export function Services() {
     <section id="services" className="py-20 md:py-32 bg-card">
       <div className="container mx-auto px-4 md:px-6">
         <div className="text-center mb-12 md:mb-16">
-          <h2 className="text-3xl md:text-4xl font-bold font-headline">AI-Powered Experiences</h2>
+          <h2 className="text-3xl md:text-4xl font-bold font-headline">Photography Experiences</h2>
           <p className="mt-4 max-w-2xl mx-auto text-muted-foreground">
             Boutique creative services tailored to your story. Let's collaborate.
           </p>
         </div>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {services.map((service) => (
-            <Card key={service.name} className="flex flex-col border-secondary/20 hover:border-primary/50 transition-colors duration-300 shadow-lg bg-background group">
-              <CardHeader>
+            <Card key={service.name} className="flex flex-col border-secondary/20 hover:border-primary/50 transition-colors duration-300 shadow-lg bg-background group text-center">
+              <CardHeader className="items-center">
+                <div className="p-4 bg-primary/10 rounded-full mb-4 group-hover:scale-110 transition-transform">
+                    <service.icon className="h-8 w-8 text-primary" />
+                </div>
                 <CardTitle className="text-2xl font-headline">{service.name}</CardTitle>
-                <CardDescription>{service.description}</CardDescription>
               </CardHeader>
               <CardContent className="flex-grow flex flex-col">
-                <ul className="space-y-3 mb-6 flex-grow">
-                  {service.features.map((feature) => (
-                    <li key={feature} className="flex items-start gap-3">
-                      <Check className="h-5 w-5 text-primary mt-1 shrink-0" />
-                      <span className="text-muted-foreground">{feature}</span>
-                    </li>
-                  ))}
-                </ul>
+                <p className="text-muted-foreground mb-6 flex-grow">{service.description}</p>
                 <Button asChild className="w-full mt-auto">
                   <Link href="/contact">
                     <Sparkles className="mr-2 h-4 w-4 transition-transform group-hover:scale-125" />
