@@ -1,10 +1,14 @@
 import type { Metadata } from 'next';
 import './globals.css';
 import { Toaster } from '@/components/ui/toaster';
+import { siteConfig } from '@/lib/site-config';
 
 export const metadata: Metadata = {
   title: 'Blu Koffee Studio Consultancy',
   description: 'Visual stories crafted with precision.',
+  icons: {
+    icon: siteConfig.faviconUrl || '/favicon.ico',
+  },
 };
 
 export default function RootLayout({

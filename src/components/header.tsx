@@ -7,6 +7,8 @@ import { Button } from '@/components/ui/button';
 import { Sheet, SheetContent, SheetTrigger } from '@/components/ui/sheet';
 import { cn } from '@/lib/utils';
 import { usePathname } from 'next/navigation';
+import { siteConfig } from '@/lib/site-config';
+import Image from 'next/image';
 
 const navLinks = [
   { href: '/', label: 'Home' },
@@ -42,6 +44,17 @@ export function Header() {
     setIsMobileMenuOpen(false);
   };
 
+  const Logo = () => (
+    <>
+    {siteConfig.logoUrl ? (
+      <Image src={siteConfig.logoUrl} alt="Blu Koffee Studio Consultancy Logo" width={40} height={40} className="rounded-sm" />
+    ) : (
+      <Camera className="h-6 w-6 text-primary" />
+    )}
+    <span>Blu Koffee Studio Consultancy</span>
+    </>
+  )
+
   return (
     <header
       className={cn(
@@ -51,8 +64,7 @@ export function Header() {
     >
       <div className="container mx-auto flex h-20 items-center justify-between px-4 md:px-6">
         <Link href="/" className="flex items-center gap-2 font-bold text-xl font-headline">
-          <Camera className="h-6 w-6 text-primary" />
-          <span>Blu Koffee Studio Consultancy</span>
+          <Logo />
         </Link>
         <nav className="hidden md:flex items-center gap-6">
           {links.map((link) => (
@@ -77,8 +89,7 @@ export function Header() {
               <div className="p-6">
                 <div className="flex items-center justify-between mb-8">
                     <Link href="/" className="flex items-center gap-2 font-bold text-lg" onClick={handleLinkClick}>
-                        <Camera className="h-6 w-6 text-primary" />
-                        <span>Blu Koffee Studio Consultancy</span>
+                       <Logo />
                     </Link>
                 </div>
                 <nav className="flex flex-col gap-6">
