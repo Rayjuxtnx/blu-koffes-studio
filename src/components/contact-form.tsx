@@ -25,7 +25,7 @@ export function ContactForm() {
   const [state, dispatch] = useFormState(createInquiry, initialState);
 
   const contactMethods = [
-    { icon: Mail, text: 'contact@blukoffeestudioconsultancy.com', href: 'mailto:contact@blukoffeestudioconsultancy.com' },
+    { icon: Mail, text: 'blukoffee1@gmail.com', href: 'mailto:blukoffee1@gmail.com' },
     { icon: Phone, text: '(555) 123-4567' },
     { icon: MapPin, text: 'New York, NY' },
     { icon: Instagram, text: '@blukoffeestudio', href: '#' },
