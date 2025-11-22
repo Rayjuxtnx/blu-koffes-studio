@@ -26,8 +26,8 @@ export function ContactForm() {
   const [state, dispatch] = useActionState(createInquiry, initialState);
 
   const contactMethods = [
+    { icon: Phone, text: 'Start a Chat on WhatsApp', href: 'https://wa.me/254795107535' },
     { icon: Mail, text: 'blukoffee1@gmail.com', href: 'mailto:blukoffee1@gmail.com' },
-    { icon: Phone, text: '+254795107535 (Call/WhatsApp)', href: 'tel:+254795107535' },
     { icon: MapPin, text: 'Nairobi' },
     { icon: Instagram, text: '@blukoffeestudio', href: '#' },
     { icon: Twitter, text: '@blukoffeestudio', href: '#' },
@@ -51,7 +51,7 @@ export function ContactForm() {
                         <div key={index} className="bg-background/50 p-6 rounded-lg flex flex-col items-center justify-center">
                             <method.icon className="h-8 w-8 text-primary mb-3" />
                             {method.href ? (
-                                <a href={method.href} className="text-sm text-muted-foreground hover:text-foreground">{method.text}</a>
+                                <a href={method.href} target="_blank" rel="noopener noreferrer" className="text-sm text-muted-foreground hover:text-foreground">{method.text}</a>
                             ) : (
                                 <span className="text-sm text-muted-foreground">{method.text}</span>
                             )}
