@@ -9,14 +9,15 @@ import { cn } from '@/lib/utils';
 import { usePathname } from 'next/navigation';
 
 const navLinks = [
-  { href: '/#showcase', label: 'Showcase' },
+  { href: '/', label: 'Home' },
+  { href: '/gallery', label: 'Gallery' },
   { href: '/#services', label: 'Experiences' },
   { href: '/#about', label: 'About' },
   { href: '/contact', label: 'Inquire' },
 ];
 
 const homeNavLinks = [
-  { href: '#showcase', label: 'Showcase' },
+  { href: '/gallery', label: 'Gallery' },
   { href: '#services', label: 'Experiences' },
   { href: '#about', label: 'About' },
   { href: '/contact', label: 'Inquire' },
