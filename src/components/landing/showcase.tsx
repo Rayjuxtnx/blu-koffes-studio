@@ -36,7 +36,7 @@ export function Showcase() {
           {stories.map((story, index) => {
             const image = PlaceHolderImages.find((img) => img.id === story.id);
             return (
-              <div key={story.id} className="flex flex-col md:flex-row items-center gap-8 md:gap-12 even:md:flex-row-reverse">
+              <div key={story.id} className="flex flex-col md:flex-row items-center gap-8 md:gap-12 even:md:flex-row-reverse group">
                 <div className="md:w-1/2 w-full">
                   {image && (
                     <Image
@@ -44,7 +44,7 @@ export function Showcase() {
                       alt={story.title}
                       width={800}
                       height={600}
-                      className="rounded-lg object-cover aspect-[4/3] shadow-2xl shadow-primary/10"
+                      className="rounded-lg object-cover aspect-[4/3] shadow-2xl shadow-primary/20 transition-all duration-300 group-hover:shadow-primary/40 group-hover:scale-105"
                       data-ai-hint={story.imageHint}
                     />
                   )}

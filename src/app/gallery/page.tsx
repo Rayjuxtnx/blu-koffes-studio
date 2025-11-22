@@ -17,13 +17,13 @@ export default function GalleryPage() {
           </div>
           <div className="columns-1 sm:columns-2 md:columns-3 lg:columns-4 gap-4 space-y-4">
             {PlaceHolderImages.map((image) => (
-              <div key={image.id} className="break-inside-avoid">
+              <div key={image.id} className="break-inside-avoid group">
                 <Image
                   src={image.imageUrl}
                   alt={image.description}
                   width={500}
                   height={500}
-                  className="w-full h-auto rounded-lg object-cover shadow-lg hover:shadow-primary/20 transition-shadow duration-300"
+                  className="w-full h-auto rounded-lg object-cover shadow-lg hover:shadow-primary/40 transition-all duration-300 group-hover:scale-105 shadow-primary/20"
                   data-ai-hint={image.imageHint}
                 />
               </div>
