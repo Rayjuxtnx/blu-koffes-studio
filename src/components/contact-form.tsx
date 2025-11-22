@@ -26,7 +26,7 @@ export function ContactForm() {
 
   const contactMethods = [
     { icon: Mail, text: 'blukoffee1@gmail.com', href: 'mailto:blukoffee1@gmail.com' },
-    { icon: Phone, text: '(555) 123-4567' },
+    { icon: Phone, text: '+254795107535 (Call/WhatsApp)', href: 'tel:+254795107535' },
     { icon: MapPin, text: 'New York, NY' },
     { icon: Instagram, text: '@blukoffeestudio', href: '#' },
     { icon: Twitter, text: '@blukoffeestudio', href: '#' },
