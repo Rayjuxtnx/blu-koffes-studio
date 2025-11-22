@@ -148,7 +148,7 @@ export function SceneAnalyzer() {
             </div>
           </div>
 
-          <div className="min-h-[400px]">
+          <div>
              <h3 className="text-xl font-semibold font-headline mb-4">Pro Analysis</h3>
             {isAnalyzing && (
                  <div className="space-y-4 animate-in fade-in-50">
@@ -187,7 +187,7 @@ export function SceneAnalyzer() {
                 </div>
             )}
             {!selectedImage && !isAnalyzing && (
-                <div className="text-center text-muted-foreground p-8 border-2 border-dashed rounded-lg h-full flex flex-col justify-center items-center bg-background/30">
+                <div className="text-center text-muted-foreground p-8 border-2 border-dashed rounded-lg flex flex-col justify-center items-center bg-background/30">
                     <p>Analysis will appear here once an image is selected.</p>
                 </div>
             )}
